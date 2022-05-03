@@ -1,0 +1,4 @@
+name='prasad'
+print(name)
+age=20
+print(age)
