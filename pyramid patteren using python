@@ -1,0 +1,7 @@
+p='*'
+print(p)
+for i in range(10):
+    j='* '
+    p=j+p
+    print(p)
+    
