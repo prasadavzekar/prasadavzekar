@@ -1,0 +1,17 @@
+create table employee
+(name varchar (30),
+Id smallint not null auto_increment,
+age int,
+primary key(id));
+select * from employee;
+alter table employee add column salary numeric;
+insert into employee
+values ("prasad",'1','22','20000');
+insert into employee
+values("chandan",'2','20','20000'),
+("yuvaraj",'3','24','20000');
+alter table employee add column (tp varchar(30));
+ insert into employee (name,id,age,salary,tp)
+ values('pranay',4,25,30000,'student'),
+ ('akshay',5,52,1000000,'films');
+ select * from employee;
