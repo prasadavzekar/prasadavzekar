@@ -1,0 +1,5 @@
+create table employee
+(name varchar (30),
+Id smallint not null auto_increment,
+age int (2));
+select * from employee;
