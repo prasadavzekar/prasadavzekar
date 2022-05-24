@@ -1,0 +1,19 @@
+create table personaldetails
+
+(id  smallint unsigned not null auto_increment,
+firstname varchar(30),
+lastname varchar(30),
+age int,
+gender char(6)not null,
+productbought int,
+primary key(Id),
+check (age>12)
+);
+alter table personaldetails
+add column email varchar(40);
+select * from personaldetails;
+insert into personaldetails
+values (default,'prasad','avzekar',"22",'male',default);
+insert into personaldetails (firstname,lastname,age,gender,productbought)
+values('pranay','patil',"25",'male',"1");
+select * from personaldetails;
