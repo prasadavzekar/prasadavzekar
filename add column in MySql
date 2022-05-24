@@ -1,0 +1,14 @@
+create table personaldetails
+
+(id  smallint unsigned not null auto_increment,
+firstname varchar(30),
+lastname varchar(30),
+age int,
+gender char(6)not null,
+productbought int,
+primary key(Id),
+check (age>12)
+);
+alter table personaldetails
+add column email varchar(40);
+select * from personaldetails;
