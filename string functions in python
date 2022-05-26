@@ -1,0 +1,12 @@
+#string functions 
+a = "python"
+print(a)
+print(type(a))
+
+greeting = "Hey ,Programmer "
+name = "Good Morning"
+c = greeting + name
+print(c)
+#string slicing 
+print (name[3])
+print(name[1:4])
