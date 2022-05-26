@@ -1,0 +1,7 @@
+#operators 
+x = 5
+y = 8
+print ("The Value Of 4+8 is",4+8)
+print ("The Value Of 4-8 is",4-8)
+print ("The Value Of 4*8 is",4*8)
+print ("The Value Of 4/8 is",4/8)
