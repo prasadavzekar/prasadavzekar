@@ -1,0 +1,7 @@
+#comparison Operators 
+b = 14>7
+print(b)
+c = 14<7
+c = (10<=7)
+c = (10>=7)
+print(c)
