@@ -1,0 +1,9 @@
+#string functions 
+name = "Once upon a time there was a programmer named Prasad "
+print (len(name))
+'''String .ends with'''
+print(name.endswith('Prasad'))
+'''string.count '''
+x = "Once upon a time there was a programmer named Prasad "
+print(x.count("a"))
+print(x.find('Prasad'))
