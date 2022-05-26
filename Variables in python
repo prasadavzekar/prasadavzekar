@@ -1,0 +1,11 @@
+#Variables#
+a = 'prasad'
+b = 45
+c = 5.48
+print(a)
+print(b)
+print(c)
+
+print(type(a))
+print(type(b))
+print(type(c))
