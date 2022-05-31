@@ -1,0 +1,15 @@
+use sakila;
+create table students
+( 
+name varchar (55),
+age int
+);
+insert into students
+(name,age)
+values ('vinoda',20);
+select * from students;
+insert into students
+values('chandan',22);
+alter table students add school varchar(55);
+
+alter table students drop column school;
