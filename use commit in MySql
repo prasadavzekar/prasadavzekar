@@ -1,0 +1,56 @@
+create table EMP_SPENT (emp int,amount integer,  categery varchar(40));
+insert into EMP_SPENT values (1, 10, 'zomato');
+insert into EMP_SPENT values (1,20, 'swiggy');
+insert into EMP_SPENT values (1, 20, 'netmed');
+insert into EMP_SPENT values (2, 40, 'swiggy');
+insert into EMP_SPENT values (2, 30, 'bb');
+insert into EMP_SPENT values (2,20, 'dmart');
+commit;
+select * from EMP_SPENT;
+select* ,
+case 
+when categery like'zomato'  then 'food'
+when categery like'swiggy'  then 'food'
+when categery like'netmed' then 'medicine'
+when categery like'bb' then 'shopping'
+when categery like'dmart' then 'shopping'
+end as high_categery from emp_spent;
+select * from( 
+select amount,high_categery,
+dense_rank () over(
+partition by amount
+order by high_categery desc )as 
+new_amount from EMP_SPENT);
+select current_date ();
+select adddate( current_date ,5);
+select adddate( current_date ,-5);
+select date('13-03-2022');
+select cast('13-03-2022'as date);
+select datediff(current_date(),'13-03-2022');
+
+select day("2022-03-13");
+select month("2022-03-13");
+select year("2022-03-13");
+select dayname("2022-11-21");
+select dayofweek("2022-11-21");
+select dayofmonth("2022-11-21");
+use world;
+CREATE TABLE `employee2` (
+   `Emp_id` int DEFAULT NULL,
+   `Name1` varchar(20) DEFAULT NULL,
+   `Salary` int DEFAULT NULL,
+   `E_Mail` varchar(30) DEFAULT NULL,
+   `Country` varchar(20) DEFAULT NULL,
+   `joining_date` date DEFAULT NULL
+ ) ;	
+
+insert into employee2 values(131,'Swadhish',50000,'sds@gmail.com','India','2022-02-15');
+insert into employee2 values(121,'anil',50000,'sd22@gmail.com','India','2022-03-13');
+insert into employee2 values(123,'akash',52000,'sd21@gmail.com','India','2022-03-18');
+
+
+
+select * from employee2 where joining_date = current_date();
+select * from employee2 where joining_date = adddate(current_date(),5);
+select joining_date, cast(joining_date as char)as char_joining_date,
+day(joining_date),month(joining_date),year(joining_date),dayname(joining_date) from employee2;
