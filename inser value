@@ -1,0 +1,22 @@
+create table employeeinfo1
+(
+id int not null auto_increment primary key,
+emp_name varchar(30) not null,
+adress varchar(40) not null,
+city varchar(30) not null,
+age int not null,
+doj  date not null,
+designation varchar (50) not null,
+salary int,
+mobile_no int
+);
+select * from employeeinfo1;
+drop table employeeinfo1;
+select * from employeeinfo1;
+alter table employeeinfo1 add email varchar (30);
+select * from employeeinfo1;
+alter table employeeinfo1 drop email ;
+insert into employeeinfo1 (id,emp_name,adress,city,age,doj,designation,salary,mobile_no)
+value(2,'chandan','kolsewadi','kalyan',22,22/7/2022,'programmer',31000,9852);
+insert into employeeinfo1 (id,emp_name,adress,city,age,doj,designation,salary,mobile_no)
+value(1,'prasad','kolasewadi','kalyan',22,21/07/2022,'programmer',30000,9619);
