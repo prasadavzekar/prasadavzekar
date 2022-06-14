@@ -1,0 +1,12 @@
+create table employeeinfo1
+(
+id int not null auto_increment primary key,
+emp_name varchar(30) not null,
+adress varchar(40) not null,
+city varchar(30) not null,
+age int not null,
+doj  date not null,
+designation varchar (50) not null,
+salary int,
+mobile_no int
+);
