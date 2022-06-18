@@ -1,0 +1,14 @@
+
+list1=[1,2,3,4,5]
+for i in list1:
+    print(i)
+list=[]
+while (True):
+   name= input ('enter the name')
+   list.append(name)
+   input_value=input ('Do you want to continue press "yes" to stop press "no" ')
+   if input_value=='yes':
+    pass
+   elif input_value=='no':
+    break
+print(list)
