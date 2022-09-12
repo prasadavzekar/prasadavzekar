@@ -1,0 +1,5 @@
+
+a = ("prasad\t")
+b = ("avzekar")
+c = a + b
+print(c)
