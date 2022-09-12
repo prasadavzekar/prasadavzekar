@@ -1,0 +1,6 @@
+a = input("enter the any number\n")
+b = input("enter the any number\n")
+a = int(a)
+b = int(b)
+avg = (a + b)/2
+print("The value of avrage is",avg)
