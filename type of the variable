@@ -1,0 +1,2 @@
+a = input("enter variable\n")
+print(type(a))
