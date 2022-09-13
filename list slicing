@@ -1,0 +1,3 @@
+
+friends = ["prasad","chandan","rahul","vishal"]
+print(friends[0:2])
