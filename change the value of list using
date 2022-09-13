@@ -1,0 +1,4 @@
+
+Friend = ["prasad","chandan",21,True]
+Friend[1] = "Golu"
+print(Friend)
