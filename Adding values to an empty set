@@ -1,0 +1,8 @@
+b = set()
+print(type(b))
+b.add(4)
+b.add(5)
+b.add([6,7])
+b.add({8:9})
+b.add((10,11)) # Cannot add list or dictionary to sets
+print(b)
