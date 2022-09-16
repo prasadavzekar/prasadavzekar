@@ -1,0 +1,8 @@
+mydict = {"name": "prasad",
+        "age": 21,
+        "id": 1,
+        "marks": [1,2,3,4,5],
+        "anotherdist": {"prasad": "bsc.it"}
+        }
+print(mydict)
+print(mydict.values())
